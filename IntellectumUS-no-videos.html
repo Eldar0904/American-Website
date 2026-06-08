@@ -1,0 +1,1933 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>IntellectumUS — School Furniture, Technology & Equipment for US Districts</title>
+  <meta name="description" content="IntellectumUS fits out K–12 schools across the US with classroom furniture, digital equipment, STEM kits, intellectual games and smart campus IoT — all on one district PO."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://intellectumus.com/"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://intellectumus.com/"/>
+  <meta property="og:title" content="IntellectumUS — One supplier. Five ways to fit out a school."/>
+  <meta property="og:description" content="Classroom furniture, AV technology, STEM kits, intellectual games and IoT infrastructure for US K–12 districts. One PO, co-terminus warranties, E-Rate compatible."/>
+  <meta property="og:site_name" content="IntellectumUS"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="IntellectumUS — Fitting out US schools, end-to-end"/>
+  <meta name="twitter:description" content="One supplier for furniture, AV, STEM, games and IoT. Single district PO, 18 US states served."/>
+
+  <!-- JSON-LD Organization schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "IntellectumUS",
+    "url": "https://intellectumus.com",
+    "description": "School furniture, educational technology and equipment supplier for US K–12 districts.",
+    "foundingDate": "2014",
+    "areaServed": "US",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-212-555-0100",
+      "contactType": "sales",
+      "email": "sales@intellectumus.com",
+      "availableLanguage": "English"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;600;700&family=DM+Mono:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/></noscript>
+  <!-- og:image placeholder — replace with real URL before launch -->
+  <meta property="og:image" content="https://intellectumus.com/og-image.jpg"/>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    html, body { margin: 0; padding: 0; background: #f7f2e8; }
+    body {
+      font-family: 'Manrope', sans-serif;
+      color: #1b1712;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    button:focus-visible, a:focus-visible { outline: 2px solid #3E4193; outline-offset: 2px; }
+    ::selection { background: #3E419322; }
+
+    /* ── Smooth input styles ── */
+    input, select, textarea {
+      font-family: 'Manrope', sans-serif;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    /* ── Custom scrollbar ── */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #d0c8ba; border-radius: 99px; }
+
+    /* ── Keyframe animations ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes shimmer {
+      0%   { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    /* ── Modal overlay ── */
+    .modal-overlay {
+      position: fixed; inset: 0; z-index: 200;
+      background: rgba(14, 12, 20, 0.55);
+      backdrop-filter: blur(6px);
+      display: flex; align-items: center; justify-content: center;
+      padding: 20px;
+      animation: fadeUp 0.2s ease;
+    }
+    .modal-box {
+      background: #fffdf8;
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 560px;
+      width: 100%;
+      position: relative;
+      box-shadow: 0 32px 80px rgba(0,0,0,0.22);
+    }
+    .modal-close {
+      position: absolute; top: 16px; right: 16px;
+      width: 32px; height: 32px; border-radius: 50%;
+      border: none; background: #f0ebe0; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; color: #8f8475;
+      transition: background 0.15s, color 0.15s;
+    }
+    .modal-close:hover { background: #e5dfd4; color: #1b1712; }
+
+    /* ── Form styles ── */
+    .field-group { margin-bottom: 18px; }
+    .field-label {
+      display: block; font-size: 12.5px; font-weight: 700;
+      color: #4a4138; margin-bottom: 7px; letter-spacing: 0.02em;
+    }
+    .field-input {
+      width: 100%; padding: 11px 14px;
+      border: 1.5px solid #ddd8cc; border-radius: 10px;
+      font-size: 14px; font-family: 'Manrope', sans-serif;
+      color: #1b1712; background: #fff;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .field-input:focus {
+      outline: none; border-color: #3E4193;
+      box-shadow: 0 0 0 3px rgba(62,65,147,0.12);
+    }
+    select.field-input { cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238f8475' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
+    .field-upload {
+      width: 100%; padding: 24px 14px;
+      border: 1.5px dashed #c8c2b4; border-radius: 10px;
+      font-size: 13.5px; color: #8f8475; text-align: center;
+      background: #faf6ef; cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .field-upload:hover { border-color: #3E4193; background: #f0f0fa; color: #3E4193; }
+    .field-upload input[type="file"] { display: none; }
+
+    /* ── Mobile: tablet ── */
+    @media (max-width: 900px) {
+      .hero-grid       { grid-template-columns: 1fr !important; }
+      .hero-sidebar    { display: none !important; }
+      .lines-grid      { grid-template-columns: repeat(2, 1fr) !important; }
+      .why-grid        { grid-template-columns: repeat(2, 1fr) !important; }
+      .testimonial-grid{ grid-template-columns: 1fr !important; }
+      .matcher-split   { grid-template-columns: 1fr !important; }
+            .trust-stats     { grid-template-columns: repeat(2, 1fr) !important; }
+      .trust-mid       { grid-template-columns: 1fr !important; }
+      .trust-pillars   { border-right: none !important; border-bottom: 1px solid var(--hairline) !important; }
+      .line-features   { grid-template-columns: repeat(2, 1fr) !important; }
+      .line-switcher   { grid-template-columns: repeat(2, 1fr) !important; }
+      .footer-grid     { grid-template-columns: 1fr 1fr 1fr !important; }
+      .contact-split   { grid-template-columns: 1fr !important; }
+      .modal-box       { padding: 28px 22px !important; }
+      .quote-form-row  { grid-template-columns: 1fr !important; }
+    }
+
+    /* ── Mobile: phone ── */
+    @media (max-width: 600px) {
+      .lines-grid      { grid-template-columns: 1fr !important; }
+      .why-grid        { grid-template-columns: 1fr !important; }
+      .trust-stats     { grid-template-columns: repeat(2, 1fr) !important; }
+      .trust-pillars   { grid-template-columns: 1fr !important; }
+      .trust-bottom    { flex-direction: column !important; align-items: flex-start !important; }
+      .line-features   { grid-template-columns: 1fr !important; }
+      .line-switcher   { grid-template-columns: 1fr !important; }
+      .line-stats      { flex-direction: column !important; }
+      .footer-grid     { grid-template-columns: 1fr 1fr !important; }
+      .hero-cta-group  { flex-direction: column !important; }
+      .nav-links       { display: none !important; }
+      .nav-meta        { display: none !important; }
+      section          { padding-left: 18px !important; padding-right: 18px !important; }
+    }
+
+    /* ── CSS custom properties (colour tokens for dark mode readiness) ── */
+    :root {
+      --ink:      #1b1712;
+      --ink2:     #4a4138;
+      --mute:     #8f8475;
+      --hairline: #e3dccf;
+      --paper:    #f7f2e8;
+      --paper2:   #efe8da;
+      --card:     #fffdf8;
+      --primary:  #3E4193;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink:      #f0ebe0;
+        --ink2:     #c0b8a8;
+        --mute:     #7a7060;
+        --hairline: #2e2a24;
+        --paper:    #141210;
+        --paper2:   #1c1814;
+        --card:     #1f1c17;
+        --primary:  #6b6fd4;
+      }
+      html, body { background: #141210; }
+    }
+  </style>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <a href="#main-content" style="position:absolute;top:-40px;left:0;background:#3E4193;color:#fff;padding:8px 16px;z-index:9999;border-radius:0 0 8px 0;font-family:sans-serif;font-size:14px;transition:top .2s" onfocus="this.style.top='0'" onblur="this.style.top='-40px'">Skip to main content</a>
+  <div id="root" role="application" aria-label="IntellectumUS"></div>
+
+  <script type="text/babel">
+    // ═══════════════════════════════════════════════════════════
+    // DESIGN TOKENS & BRAND DATA
+    // ═══════════════════════════════════════════════════════════
+
+    const WARM = {
+      ink:       '#1b1712',
+      ink2:      '#4a4138',
+      mute:      '#8f8475',
+      hairline:  '#e3dccf',
+      hairSoft:  '#ece4d6',
+      paper:     '#f7f2e8',
+      paper2:    '#efe8da',
+      card:      '#fffdf8',
+      primary:   '#3E4193',
+      primarySoft: '#eaeafb',
+      primaryInk: '#23255f',
+    };
+
+    const FONT = {
+      display: "'Bricolage Grotesque', sans-serif",
+      body:    "'Manrope', sans-serif",
+      mono:    "'DM Mono', monospace",
+    };
+
+    const R = { sm: 10, md: 16, lg: 22, pill: 999 };
+
+    const LINES = [
+      {
+        id: 'games', n: '01', name: 'Intellectual Games', fullName: 'Intellectual Games',
+        pairsWith: ['class', 'furniture'],
+        tagline: 'Strategy, logic & spatial reasoning games for the classroom',
+        accent: '#FBBC1B', accentInk: '#5b3a00', accentSoft: '#fff6dc',
+        eyebrow: 'OUR ORIGIN — THE LINE WE\'RE KNOWN FOR',
+        headline: 'Curiosity,\nby design.',
+        lede: 'Six tactile game systems — from tangrams and matrix logic to route-building and territory strategy — that develop spatial reasoning, deduction and collaboration.',
+        features: [
+          { tag: 'LOGIC & MATRICES',  title: 'Deductive play', blurb: 'Matris — combine shape and line-pattern cubes to complete the grid.',    skus: '6 levels' },
+          { tag: 'SPATIAL REASONING', title: 'Shape & form',   blurb: 'Tangramus & Formus — rebuild figures from geometric and wooden pieces.', skus: '90+ figures' },
+          { tag: 'STRATEGY',          title: 'Plan & outwit',  blurb: 'Kolonies, Fronten & Roadway — territory, capture and route-building.',   skus: '3 systems' },
+        ],
+        stats: [{ v:'6', k:'game systems' }, { v:'3–12', k:'age range' }, { v:'18', k:'countries' }],
+        cta: { primary: 'Request a sample set', secondary: 'Curriculum alignment ↗' },
+        quote: { text: '"The games disappear into the lesson — students forget they\'re learning."', who: '— 4th grade teacher, Austin ISD' },
+        catalog: ['Matrix logic', 'Tangrams', 'Spatial puzzles', 'Strategy games', 'Curriculum kits', 'Assessment tools'],
+      },
+      {
+        id: 'iot', n: '02', name: 'IoT boards', fullName: 'IoT Boards',
+        pairsWith: ['digital', 'furniture'],
+        tagline: 'Network infrastructure, sensors and building intelligence',
+        accent: '#1aaf76', accentInk: '#0a3d28', accentSoft: '#e4f7f0',
+        eyebrow: 'CONNECTED CAMPUS · REAL-TIME INSIGHTS',
+        headline: 'The school that\nknows itself.',
+        lede: 'Network infrastructure, air quality sensors, occupancy analytics, and energy dashboards — wired and managed under one SLA. Turn a building into a learning environment that responds.',
+        features: [
+          { tag: 'NETWORKING',  title: 'Campus Wi-Fi 6', blurb: 'Unifi / Meraki · density-tested',    skus: 'p.90' },
+          { tag: 'SENSORS',     title: 'Air & light',    blurb: 'CO₂ · temp · lux · particulates',   skus: 'p.94' },
+          { tag: 'ANALYTICS',   title: 'Occupancy AI',   blurb: 'Real-time room utilization data',    skus: 'p.97' },
+          { tag: 'ENERGY',      title: 'Smart metering', blurb: 'Per-classroom kWh · ESG reporting',  skus: 'p.100' },
+        ],
+        stats: [{ v:'99.97%', k:'uptime SLA' }, { v:'<4 ms', k:'sensor latency' }, { v:'22%', k:'energy savings avg.' }],
+        cta: { primary: 'Schedule a network audit', secondary: 'Download the IoT brief' },
+        quote: { text: '"Energy costs dropped 22% in the first year. The dashboard paid for itself."', who: '— CFO, Jefferson County Schools' },
+        catalog: ['Wi-Fi infrastructure', 'Air quality sensors', 'Occupancy analytics', 'Energy metering', 'Access control', 'Digital signage'],
+      },
+      {
+        id: 'digital', n: '03', name: 'Digital Equipment', fullName: 'Boards, Devices & Carts',
+        pairsWith: ['nodistep', 'iot'],
+        image: 'iStock-1358014313-scaled-1.jpg',
+        tagline: 'Interactive panels, carts and classroom devices',
+        accent: '#3E4193', accentInk: '#1a1c4a', accentSoft: '#eef0fb',
+        eyebrow: 'DISTRICT-GRADE HARDWARE · 3-YEAR SLA',
+        headline: 'Hardware that\nsurvives a Tuesday.',
+        lede: 'Interactive panels, 1:1 device fleets, charging carts, and visualizers — all under one PO, one warranty, one support line. Replace four invoices with one.',
+        features: [
+          { tag: 'PANELS',      title: '65″ — 86″',       blurb: 'PCAP · 20-point touch',       skus: 'p.62' },
+          { tag: 'DEVICES',     title: 'Pri / Sec fleets', blurb: 'MDM-ready · 4-yr battery',    skus: 'p.68' },
+          { tag: 'CARTS',       title: 'Lock + charge',    blurb: '30/36 bay configurations',    skus: 'p.71' },
+          { tag: 'VISUALIZERS', title: 'Doc cameras',      blurb: 'USB-C · 4K · ceiling-arm',    skus: 'p.74' },
+        ],
+        stats: [{ v:'0', k:'tickets · Lakewood pilot' }, { v:'3 yr', k:'on-site SLA' }, { v:'80', k:'panels replaced' }],
+        cta: { primary: 'Request a site survey', secondary: 'Download the spec sheet' },
+        quote: { text: '"We replaced 80 panels across the district. Tickets dropped to zero."', who: '— IT director, Lakewood Public Schools' },
+        catalog: ['Interactive panels', '1:1 devices', 'Charging carts', 'Visualizers', 'Webcams', 'Headsets'],
+      },
+      {
+        id: 'nodistep', n: '04', name: 'NodiStep', fullName: 'NodiStep',
+        pairsWith: ['digital', 'games'],
+        tagline: 'Modular STEM & robotics building blocks for hands-on learning',
+        accent: '#E2574C', accentInk: '#5c1410', accentSoft: '#fdeae8',
+        eyebrow: 'MODULAR STEM · BUILD, CODE, ITERATE',
+        headline: 'Build it.\nProgram it.\nRebuild it.',
+        lede: 'Snap-together electronics modules and starter kits that take students from first circuit to working prototype — paired with a guided curriculum that scales from elementary basics to high-school robotics.',
+        features: [
+          { tag: 'STARTER KITS',  title: 'First circuits',  blurb: 'Snap modules · no soldering · grades 3–6',  skus: 'p.110' },
+          { tag: 'BUILD SETS',    title: 'Robotics blocks', blurb: 'Sensors · motors · controllers',             skus: 'p.114' },
+          { tag: 'CURRICULUM',    title: 'Guided projects', blurb: 'Step-by-step builds aligned to STEM standards', skus: 'p.118' },
+        ],
+        stats: [{ v:'30+', k:'guided builds' }, { v:'8–18', k:'age range' }, { v:'0', k:'soldering required' }],
+        cta: { primary: 'Request a starter kit', secondary: 'Download the curriculum guide' },
+        quote: { text: 'Image gallery and case-study quote — to be added once NodiStep photos are shared.', who: '— placeholder' },
+        catalog: ['Starter kits', 'Build sets', 'Sensors & controllers', 'Curriculum packs', 'Replacement modules', 'Carrying cases'],
+        image: 'NodiLinear.jpg',
+      },
+      {
+        id: 'class', n: '05', name: 'Class Equipment', fullName: 'Class Equipment',
+        pairsWith: ['games', 'furniture'],
+        image: 'istockphoto-1409722748-612x612.jpg',
+        tagline: 'STEM kits, lab gear and instructional supplies',
+        accent: '#B56AFF', accentInk: '#2f0d5a', accentSoft: '#f4ecff',
+        eyebrow: 'HANDS-ON STEM · GRADES K–12',
+        headline: 'Science you\ncan hold.',
+        lede: 'Microscope kits, robotics sets, lab benches, and math manipulatives — graded by band and aligned to NGSS. Restock-ready consumables on the same district PO.',
+        features: [
+          { tag: 'PRE-K',      title: 'Sensory kits',   blurb: 'Sorting · counting · texture', skus: 12 },
+          { tag: 'ELEMENTARY', title: 'Discovery sets', blurb: 'Magnets · circuits · weather',  skus: 28 },
+          { tag: 'MIDDLE',     title: 'Lab gear',        blurb: 'Microscopes · glassware',      skus: 40 },
+          { tag: 'HIGH',       title: 'Robotics',        blurb: 'Sensors · actuators · code',   skus: 22 },
+        ],
+        stats: [{ v:'NGSS', k:'aligned' }, { v:'1,800+', k:'classrooms' }, { v:'48 hr', k:'restock SLA' }],
+        cta: { primary: 'Request a STEM catalog', secondary: 'Download the spec PDF' },
+        quote: { text: '"The robotics sets arrive sorted by table group — setup went from an hour to five minutes."', who: '— STEM coordinator, Mercer County Schools' },
+        catalog: ['Microscope kits', 'Robotics sets', 'Chemistry benches', 'Math manipulatives', 'Measurement tools', 'Consumables'],
+      },
+      {
+        id: 'furniture', n: '06', name: 'Furniture', fullName: 'Classroom Furniture',
+        pairsWith: ['class', 'iot'],
+        tagline: 'Desks, seating and flexible classroom layouts',
+        accent: '#8b6535', accentInk: '#3a2810', accentSoft: '#f4ead7',
+        accent2: '#5a6e3a', accent2Soft: '#e8ecd9',
+        eyebrow: 'BUILT FOR US K–12 FACILITIES STANDARDS',
+        headline: 'Spaces that teach\nbefore the lesson does.',
+        lede: 'GreenGuard Gold certified, ANSI/BIFMA tested, 10-year structural warranty. Designed in the studio, packed flat, installed in a weekend.',
+        features: [
+          { tag: 'DESKS',       title: 'Adjustable',   blurb: 'Sit/stand · 24–32 in.',       skus: 24 },
+          { tag: 'CHAIRS',      title: 'Eco-tested',   blurb: 'Recycled poly · 12 colors',   skus: 36 },
+          { tag: 'STORAGE',     title: 'Modular',      blurb: 'Stack · roll · lock',          skus: 48 },
+          { tag: 'SOFT SEATING',title: 'Read-aloud',   blurb: 'Stain-resistant · low-VOC',    skus: 60 },
+        ],
+        stats: [{ v:'10 yr', k:'structural warranty' }, { v:'Gold', k:'GreenGuard' }, { v:'14%', k:'literacy score lift*' }],
+        cta: { primary: 'Order a swatch kit', secondary: 'Download the spec PDF' },
+        quote: { text: '"Our literacy scores rose 14 percent — and the rooms got quieter."', who: '— Head teacher, pilot · 2024 cohort' },
+        catalog: ['Desks', 'Chairs', 'Storage', 'Soft seating', 'Rugs', 'Acoustic panels'],
+      },
+    ];
+
+    // ═══════════════════════════════════════════════════════════
+    // UTILITIES
+    // ═══════════════════════════════════════════════════════════
+
+    function accentOf(L) {
+      return { c: L.accent, soft: L.accentSoft, ink: L.accentInk, c2: L.accent2 || L.accent };
+    }
+
+    function useRoute() {
+      const parse = () => {
+        const h = (window.location.hash || '#/').replace(/^#/, '');
+        const m = h.match(/^\/line\/([\w-]+)/);
+        return m ? { name: 'line', id: m[1] } : { name: 'overview' };
+      };
+      const [route, setRoute] = React.useState(parse);
+      React.useEffect(() => {
+        const on = () => setRoute(parse());
+        window.addEventListener('hashchange', on);
+        return () => window.removeEventListener('hashchange', on);
+      }, []);
+      return route;
+    }
+
+    // Scroll-reveal controller — IntersectionObserver with setInterval fallback
+    const _revealItems = new Set();
+    const _io = typeof IntersectionObserver !== 'undefined'
+      ? new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            _revealItems.forEach(item => {
+              if (item.ref.current === entry.target) { item.show(); _revealItems.delete(item); _io.unobserve(entry.target); }
+            });
+          });
+        }, { threshold: 0.08, rootMargin: '0px 0px -5% 0px' })
+      : null;
+
+    function _revealRegister(item) {
+      _revealItems.add(item);
+      if (_io && item.ref.current) _io.observe(item.ref.current);
+    }
+
+    // Fallback for browsers without IntersectionObserver
+    if (!_io) {
+      setInterval(() => {
+        _revealItems.forEach(item => {
+          if (!item.ref.current) return;
+          const r = item.ref.current.getBoundingClientRect();
+          if (r.top < window.innerHeight * 0.93) { item.show(); _revealItems.delete(item); }
+        });
+      }, 120);
+    }
+
+    function Reveal({ children, delay = 0, y = 22, style = {}, as: Tag = 'div' }) {
+      const ref = React.useRef(null);
+      const [on, setOn] = React.useState(false);
+      React.useEffect(() => {
+        const item = { ref, show: () => setOn(true) };
+        _revealRegister(item);
+        const fs = setTimeout(() => { setOn(true); _revealItems.delete(item); }, 3000);
+        return () => { _revealItems.delete(item); clearTimeout(fs); };
+      }, []);
+      return (
+        <Tag ref={ref} style={{
+          opacity: on ? 1 : 0,
+          transform: on ? 'none' : `translateY(${y}px)`,
+          transition: `opacity .55s ${delay}ms cubic-bezier(.22,1,.36,1), transform .55s ${delay}ms cubic-bezier(.22,1,.36,1)`,
+          ...style,
+        }}>{children}</Tag>
+      );
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // PRIMITIVE COMPONENTS
+    // ═══════════════════════════════════════════════════════════
+
+    // Logo wordmark
+    function Mark({ color = WARM.primary, size = 22 }) {
+      const s = size;
+      return (
+        <svg width={s} height={s} viewBox="0 0 44 44" fill="none">
+          <circle cx="22" cy="22" r="22" fill={color}/>
+          <circle cx="22" cy="17" r="7" fill={WARM.paper}/>
+          <rect x="18.5" y="26" width="7" height="13" rx="3.5" fill={WARM.paper}/>
+        </svg>
+      );
+    }
+
+    function Wordmark({ size = 19, color = WARM.ink }) {
+      return (
+        <a href="#/" style={{ display: 'flex', alignItems: 'center', gap: 9, textDecoration: 'none' }}>
+          <Mark color={WARM.primary} size={size + 3}/>
+          <span style={{ fontFamily: FONT.display, fontSize: size, fontWeight: 700, letterSpacing: '-0.02em', color }}>
+            intellectum<span style={{ color: '#FBBC1B' }}>us</span>
+          </span>
+        </a>
+      );
+    }
+
+    // Pill / badge
+    function Pill({ children, accent = WARM.primary, soft, onLight = false }) {
+      return (
+        <span style={{
+          display: 'inline-flex', alignItems: 'center', gap: 7,
+          fontFamily: FONT.mono, fontSize: 11, letterSpacing: '0.13em', textTransform: 'uppercase',
+          color: onLight ? '#fff' : accent,
+          background: onLight ? 'rgba(255,255,255,0.16)' : (soft || `${accent}14`),
+          padding: '6px 12px', borderRadius: R.pill,
+          border: `1px solid ${onLight ? 'rgba(255,255,255,0.32)' : accent + '26'}`,
+        }}>{children}</span>
+      );
+    }
+
+    // Line color chip
+    function LineChip({ L, size = 24 }) {
+      return (
+        <span style={{
+          display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+          width: size, height: size, borderRadius: size * 0.32,
+          background: L.accentSoft, border: `1.5px solid ${L.accent}30`,
+          fontFamily: FONT.mono, fontSize: size * 0.42, fontWeight: 500,
+          color: L.accentInk, flexShrink: 0,
+        }}>{L.n}</span>
+      );
+    }
+
+    // CTA button
+    function Cta({ children, variant = 'primary', accent = WARM.primary, onClick, href, type }) {
+      const base = {
+        fontFamily: FONT.body, fontWeight: 600, fontSize: 14.5, padding: '12px 22px',
+        borderRadius: R.pill, cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: 7,
+        textDecoration: 'none', transition: 'transform .15s, box-shadow .18s, background .15s', whiteSpace: 'nowrap',
+      };
+      const styles = {
+        primary:    { border: 'none', background: accent, color: '#fff', boxShadow: `0 2px 12px ${accent}44` },
+        ghost:      { border: `1.5px solid ${accent}`, background: 'transparent', color: accent },
+        light:      { border: 'none', background: '#fff', color: WARM.ink, boxShadow: '0 2px 12px rgba(0,0,0,0.12)' },
+        lightGhost: { border: '1.5px solid rgba(255,255,255,0.5)', background: 'transparent', color: '#fff' },
+      };
+      const merged = { ...base, ...(styles[variant] || styles.primary) };
+      const handleEnter = e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = variant === 'primary' ? `0 6px 20px ${accent}55` : ''; };
+      const handleLeave = e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = merged.boxShadow || ''; };
+      if (href) return <a href={href} style={merged} onMouseEnter={handleEnter} onMouseLeave={handleLeave}>{children}</a>;
+      return <button style={merged} onClick={onClick} type={type} onMouseEnter={handleEnter} onMouseLeave={handleLeave}>{children}</button>;
+    }
+
+    // Image placeholder panel
+    function Plate({ label, accent = WARM.primary, radius = R.lg, height = 360, kicker = 'IMAGE', dark = false, style = {}, src }) {
+      if (src) {
+        return (
+          <div style={{ height, borderRadius: radius, overflow: 'hidden', position: 'relative', background: '#111', ...style }}>
+            <img src={src} alt={label} loading="lazy" decoding="async" style={{ width: '100%', height: '100%', objectFit: 'cover' }}/>
+          </div>
+        );
+      }
+      const grad = `linear-gradient(135deg, ${accent}22 0%, ${accent}08 100%)`;
+      return (
+        <div style={{ height, borderRadius: radius, background: dark ? `${accent}18` : grad, display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative', overflow: 'hidden', border: dark ? `1px solid ${accent}30` : `1px solid ${accent}18`, ...style }}>
+          <div style={{ position: 'absolute', inset: 0, backgroundImage: `radial-gradient(${accent}18 1px, transparent 1px)`, backgroundSize: '22px 22px' }}/>
+          <div style={{ position: 'relative', textAlign: 'center', padding: 20 }}>
+            <div style={{ fontFamily: FONT.mono, fontSize: 10, letterSpacing: '0.16em', color: dark ? `${accent}99` : WARM.mute, marginBottom: 8 }}>{kicker}</div>
+            <div style={{ fontFamily: FONT.body, fontSize: 13, color: dark ? `${accent}aa` : WARM.ink2, maxWidth: 240 }}>{label}</div>
+          </div>
+        </div>
+      );
+    }
+
+    // Section header
+    function SectionHead({ eyebrow, title, link, accent = WARM.primary }) {
+      return (
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 24, marginBottom: 28 }}>
+          <div>
+            <div style={{ fontFamily: FONT.mono, fontSize: 10.5, letterSpacing: '0.16em', color: WARM.mute, marginBottom: 10 }}>{eyebrow}</div>
+            {title && <h2 style={{ margin: 0, fontFamily: FONT.display, fontSize: 32, fontWeight: 600, letterSpacing: '-0.025em', color: WARM.ink, lineHeight: 1.08 }}>{title}</h2>}
+          </div>
+          {link && <a href={link.href} style={{ fontFamily: FONT.body, fontSize: 13.5, fontWeight: 600, color: accent, textDecoration: 'none', flexShrink: 0 }}>{link.label} →</a>}
+        </div>
+      );
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // NAVIGATION
+    // ═══════════════════════════════════════════════════════════
+
+    function TopNav({ accent = WARM.primary, route, lines = [], onQuoteClick }) {
+      const [scrolled, setScrolled] = React.useState(false);
+      React.useEffect(() => {
+        const on = () => setScrolled(window.scrollY > 8);
+        on(); window.addEventListener('scroll', on, { passive: true });
+        return () => window.removeEventListener('scroll', on);
+      }, []);
+
+      const items = [
+        { label: 'Solutions', href: '#/' },
+        { label: 'Case studies', href: '#/' },
+        { label: 'Districts', href: '#/' },
+        { label: 'Bundle', href: '#/' },
+        { label: 'Contact', href: '#contact' },
+      ];
+
+      return (
+        <header role="banner" style={{
+          position: 'sticky', top: 0, zIndex: 60,
+          background: scrolled ? 'rgba(247,242,232,0.88)' : WARM.paper,
+          backdropFilter: scrolled ? 'saturate(140%) blur(12px)' : 'none',
+          borderBottom: `1px solid ${scrolled ? WARM.hairline : 'transparent'}`,
+          transition: 'background .25s, border-color .25s',
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 36px', maxWidth: 1400, margin: '0 auto' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 36 }}>
+              <Wordmark/>
+              <nav aria-label="Main navigation" className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: 26 }}>
+                {items.map((it, i) => (
+                  <a key={it.label} href={it.href} style={{
+                    fontFamily: FONT.body, fontSize: 13.5, fontWeight: i === 0 ? 600 : 500,
+                    color: i === 0 ? WARM.ink : WARM.ink2, textDecoration: 'none',
+                    transition: 'color .15s',
+                  }}
+                  onMouseEnter={e => e.target.style.color = WARM.ink}
+                  onMouseLeave={e => e.target.style.color = i === 0 ? WARM.ink : WARM.ink2}
+                  >{it.label}</a>
+                ))}
+              </nav>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+              <span className="nav-meta" style={{ fontFamily: FONT.mono, fontSize: 10, color: WARM.mute, letterSpacing: '0.1em' }}>EST. 2014 · NYC · ALMATY</span>
+              <Cta accent={accent} onClick={onQuoteClick}>Request a quote →</Cta>
+            </div>
+          </div>
+        </header>
+      );
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // LANDING PAGE — HERO (replaces/extends OverviewHero)
+    // ═══════════════════════════════════════════════════════════
+
+    // ── HERO BACKGROUND IMAGE ──────────────────────────────────
+    // Drop a schoolyard / fitted-out campus photo path here (e.g. 'images/hero-schoolyard.jpg').
+    // Recommended: 1900×1100px+, wide shot, warm/natural light. Leave '' to use the gradient fallback.
+    const HERO_IMAGE = 'STOCK-EDUCATION---SCHOOL---CLASSROOM_18ccfa5a160_large.avif';
+
+    function HeroSection({ lines, onQuoteClick, onMatchClick }) {
+      const [activeIdx, setActiveIdx] = React.useState(0);
+      React.useEffect(() => {
+        const t = setInterval(() => setActiveIdx(i => (i + 1) % lines.length), 4000);
+        return () => clearInterval(t);
+      }, [lines.length]);
+      const L = lines[activeIdx];
+      const hasImage = !!HERO_IMAGE;
+
+      return (
+        <section style={{ padding: '28px 36px 0', maxWidth: 1400, margin: '0 auto' }}>
+          {/* Main hero card */}
+          <div style={{ position: 'relative', borderRadius: R.lg, overflow: 'hidden', minHeight: 580 }}>
+            {hasImage && (
+              <img
+                src={HERO_IMAGE}
+                alt="A school yard at IntellectumUS-fitted campus"
+                loading="eager"
+                decoding="async"
+                aria-hidden="true"
+                style={{
+                  position: 'absolute', inset: 0, width: '100%', height: '100%',
+                  objectFit: 'cover', objectPosition: 'center',
+                }}
+              />
+            )}
+            {hasImage ? (
+              /* Dark warm scrim — keeps white text legible over the photo */
+              <div style={{
+                position: 'absolute', inset: 0,
+                background: `linear-gradient(115deg, ${WARM.ink}e8 0%, ${WARM.ink}cc 38%, ${WARM.ink}80 75%)`,
+              }}/>
+            ) : (
+              <>
+                {/* Fallback gradient shown when no image is set */}
+                <div style={{
+                  position: 'absolute', inset: 0,
+                  background: `linear-gradient(135deg, ${L.accent}18 0%, ${WARM.paper2} 60%)`,
+                  transition: 'background 0.8s ease',
+                }}/>
+                {/* Dot pattern */}
+                <div style={{
+                  position: 'absolute', inset: 0,
+                  backgroundImage: `radial-gradient(${L.accent}14 1px, transparent 1px)`,
+                  backgroundSize: '28px 28px',
+                  transition: 'opacity 0.5s',
+                }}/>
+              </>
+            )}
+            {/* Content */}
+            <div className="hero-grid" style={{ position: 'relative', display: 'grid', gridTemplateColumns: '1fr', minHeight: 620, gap: 0 }}>
+              {/* Left: text */}
+              <div style={{ padding: '56px 48px 48px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                <div>
+                  <div style={{ marginBottom: 20 }}>
+                    <Pill accent={WARM.primary} onLight={hasImage}>Est. 2014 · 18 countries · now in the US</Pill>
+                  </div>
+                  <h1 style={{
+                    margin: 0, fontFamily: FONT.display, fontWeight: 800,
+                    fontSize: 'clamp(44px, 5.2vw, 72px)',
+                    letterSpacing: '-0.04em', lineHeight: 0.94,
+                    color: hasImage ? '#fff' : WARM.ink, maxWidth: 680,
+                  }}>
+                    One supplier.<br/>
+                    <span style={{ color: L.accent, transition: 'color 0.8s' }}>Five ways</span> to fit<br/>
+                    out a school.
+                  </h1>
+                  <div className="hero-cta-group" style={{ marginTop: 32, display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+                    <Cta accent={WARM.primary} onClick={onQuoteClick}>Request a commercial offer →</Cta>
+                    <Cta variant={hasImage ? 'lightGhost' : 'ghost'} accent={WARM.primary} onClick={onMatchClick}>Find matching equipment</Cta>
+                  </div>
+                </div>
+
+                {/* Department chips — quick visual index of all five lines */}
+                <div style={{
+                  paddingTop: 28,
+                  borderTop: `1px solid ${hasImage ? 'rgba(255,255,255,0.18)' : WARM.hairline}`, marginTop: 40,
+                }}>
+                  <div style={{
+                    display: 'flex', alignItems: 'center', gap: 8, marginBottom: 14,
+                    fontFamily: FONT.mono, fontSize: 10, letterSpacing: '0.14em',
+                    color: hasImage ? 'rgba(255,255,255,0.5)' : WARM.mute,
+                  }}>
+                    <span>EXPLORE OUR PRODUCTS</span>
+                    <span style={{ display: 'inline-block', width: 28, height: 1, background: hasImage ? 'rgba(255,255,255,0.3)' : WARM.hairline }}/>
+                  </div>
+                  <div style={{
+                    display: 'flex', gap: 10,
+                    flexWrap: 'wrap',
+                  }}>
+                  {lines.map(line => (
+                    <a key={line.id} href={`#/line/${line.id}`} style={{
+                      display: 'inline-flex', alignItems: 'center', gap: 8,
+                      padding: '8px 14px 8px 8px', borderRadius: R.pill,
+                      textDecoration: 'none',
+                      background: hasImage ? 'rgba(255,255,255,0.08)' : line.accentSoft,
+                      border: `1px solid ${hasImage ? 'rgba(255,255,255,0.16)' : line.accent + '28'}`,
+                      backdropFilter: hasImage ? 'blur(6px)' : 'none',
+                      transition: 'transform 0.15s, background 0.15s',
+                    }}
+                    onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.background = hasImage ? 'rgba(255,255,255,0.16)' : line.accentSoft; }}
+                    onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.background = hasImage ? 'rgba(255,255,255,0.08)' : line.accentSoft; }}
+                    >
+                      <LineChip L={line} size={24}/>
+                      <span style={{ fontFamily: FONT.body, fontWeight: 600, fontSize: 12.5, color: hasImage ? '#fff' : line.accentInk, whiteSpace: 'nowrap' }}>{line.name}</span>
+                    </a>
+                  ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // ORDER CHANNELS (replaces PartnerLinks) — elevated version
+    // ═══════════════════════════════════════════════════════════
+
+    function OrderChannels() {
+      const channels = [
+        {
+          icon: (
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <rect width="28" height="28" rx="7" fill="#96bf48"/>
+              <path d="M7 8h2l2.5 10h8l2-7H10" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+              <circle cx="12" cy="20" r="1.2" fill="#fff"/>
+              <circle cx="18" cy="20" r="1.2" fill="#fff"/>
+            </svg>
+          ),
+          name: 'Shopify Store',
+          desc: 'Standard orders, instant checkout',
+          badge: 'Direct',
+          color: '#96bf48',
+        },
+        {
+          icon: (
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <rect width="28" height="28" rx="7" fill="#FF9900"/>
+              <path d="M6 11h16M8 11c0-3 2-5 6-5s6 2 6 5" stroke="#fff" strokeWidth="1.6" strokeLinecap="round"/>
+              <rect x="6" y="11" width="16" height="9" rx="2" stroke="#fff" strokeWidth="1.6"/>
+              <path d="M5 22c4 2 14 2 18 0" stroke="#fff" strokeWidth="1.6" strokeLinecap="round"/>
+            </svg>
+          ),
+          name: 'Amazon Business',
+          desc: 'Bulk purchasing, net-30 terms',
+          badge: 'Bulk',
+          color: '#FF9900',
+        },
+        {
+          icon: (
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <rect width="28" height="28" rx="7" fill="#3E4193"/>
+              <path d="M9 19V9l5 4 5-4v10" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          ),
+          name: 'District PO',
+          desc: 'Custom quotes, co-terminus SLA',
+          badge: 'Enterprise',
+          color: '#3E4193',
+        },
+        {
+          icon: (
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <rect width="28" height="28" rx="7" fill="#1aaf76"/>
+              <path d="M8 14a6 6 0 0 1 12 0M14 8v2M7 11l1.5 1M21 11l-1.5 1" stroke="#fff" strokeWidth="1.6" strokeLinecap="round"/>
+              <rect x="10" y="14" width="8" height="6" rx="2" fill="#fff"/>
+              <path d="M14 16v2" stroke="#1aaf76" strokeWidth="1.4" strokeLinecap="round"/>
+            </svg>
+          ),
+          name: 'B2B Sales Team',
+          desc: 'Dedicated rep, national coverage',
+          badge: 'Concierge',
+          color: '#1aaf76',
+        },
+      ];
+
+      return (
+        <section style={{ padding: '64px 36px 0', maxWidth: 1400, margin: '0 auto' }}>
+          <Reveal>
+            <SectionHead
+              eyebrow="ORDER EQUIPMENT DIRECTLY"
+              title="Four ways to buy"
+              link={{ label: 'Talk to procurement', href: '#contact' }}
+            />
+          </Reveal>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 14 }}>
+            {channels.map((ch, i) => (
+              <Reveal key={ch.name} delay={i * 60}>
+                <div style={{
+                  background: WARM.card, border: `1.5px solid ${WARM.hairline}`,
+                  borderRadius: R.md, padding: '24px 22px', cursor: 'pointer',
+                  transition: 'border-color .18s, box-shadow .18s, transform .18s',
+                  display: 'flex', flexDirection: 'column', gap: 14,
+                }}
+                onMouseEnter={e => {
+                  const el = e.currentTarget;
+                  el.style.borderColor = ch.color + '60';
+                  el.style.boxShadow = `0 10px 30px ${ch.color}18`;
+                  el.style.transform = 'translateY(-4px)';
+                }}
+                onMouseLeave={e => {
+                  const el = e.currentTarget;
+                  el.style.borderColor = WARM.hairline;
+                  el.style.boxShadow = 'none';
+                  el.style.transform = 'none';
+                }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between' }}>
+                    {ch.icon}
+                    <span style={{
+                      fontFamily: FONT.mono, fontSize: 10, letterSpacing: '0.1em',
+                      color: ch.color, background: ch.color + '14',
+                      padding: '3px 9px', borderRadius: R.pill,
+                      border: `1px solid ${ch.color}26`,
+                    }}>{ch.badge}</span>
+                  </div>
+                  <div>
+                    <div style={{ fontFamily: FONT.body, fontWeight: 700, fontSize: 15, color: WARM.ink, marginBottom: 5 }}>{ch.name}</div>
+                    <div style={{ fontFamily: FONT.body, fontSize: 13, color: WARM.ink2, lineHeight: 1.45 }}>{ch.desc}</div>
+                  </div>
+                  <div style={{ fontFamily: FONT.body, fontSize: 13, fontWeight: 600, color: ch.color, marginTop: 'auto' }}>
+                    Order this way →
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </section>
+      );
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // LINES GRID
+    // ═══════════════════════════════════════════════════════════
+
+    function LinesGrid({ lines }) {
+      return (
+        <section id="lines" style={{ padding: '64px 36px 0', maxWidth: 1400, margin: '0 auto' }}>
+          <Reveal>
+            <SectionHead eyebrow="FIVE PRODUCT LINES · ONE PARTNER" title="Everything a building needs"/>
+          </Reveal>
+          <div className="lines-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 16 }}>
+            {lines.map((L, i) => {
+              const a = accentOf(L);
+              return (
+                <Reveal key={L.id} delay={(i % 3) * 70}>
+                  <a href={`#/line/${L.id}`} style={{ textDecoration: 'none', display: 'block', height: '100%' }}>
+                    <div style={{
+                      height: '100%', border: `1.5px solid ${WARM.hairline}`,
+                      borderRadius: R.lg, overflow: 'hidden', background: WARM.card,
+                      transition: 'border-color .18s, box-shadow .18s, transform .18s',
+                      display: 'flex', flexDirection: 'column',
+                    }}
+                    onMouseEnter={e => { e.currentTarget.style.borderColor = a.c; e.currentTarget.style.boxShadow = `0 14px 36px ${a.c}22`; e.currentTarget.style.transform = 'translateY(-4px)'; }}
+                    onMouseLeave={e => { e.currentTarget.style.borderColor = WARM.hairline; e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'none'; }}
+                    >
+                      <Plate label={L.fullName} accent={a.c} radius={0} height={160} kicker={`${L.n} · ${L.name}`}/>
+                      <div style={{ padding: '20px 22px 22px', display: 'flex', flexDirection: 'column', gap: 8, flex: 1 }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 11 }}>
+                          <LineChip L={L} size={28}/>
+                          <span style={{ fontFamily: FONT.display, fontSize: 20, fontWeight: 600, letterSpacing: '-0.02em', color: WARM.ink }}>{L.fullName}</span>
+                        </div>
+                        <div style={{ fontFamily: FONT.body, fontSize: 13.5, color: WARM.ink2, lineHeight: 1.5 }}>{L.lede.split('.')[0]}.</div>
+                        <div style={{ flex: 1 }}/>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: `1px solid ${WARM.hairline}`, paddingTop: 12, marginTop: 4 }}>
+                          <span style={{ fontFamily: FONT.mono, fontSize: 10, color: WARM.mute, letterSpacing: '0.06em' }}>{L.catalog.length} CATEGORIES</span>
+                          <span style={{ fontFamily: FONT.body, fontSize: 13, fontWeight: 600, color: a.c }}>Explore →</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </Reveal>
+              );
+            })}
+          </div>
+        </section>
+      );
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // TRUST STRIP — compact single section replacing stats +
+    // why-us + testimonials + contact
+    // ═══════════════════════════════════════════════════════════
+
+    function TrustStrip({ onQuoteClick }) {
+      const tags = ['K–12 focused', 'Single PO across lines', 'Co-terminus warranties', 'E-Rate categorized'];
+
+      return (
+        <section style={{ padding: '64px 36px 0', maxWidth: 1400, margin: '0 auto' }}>
+          <Reveal>
+            <div style={{ position: 'relative', borderRadius: R.lg, border: `1.5px solid ${WARM.hairline}`, overflow: 'hidden' }}>
+              {/* Static brand gradient (replaces looping video background) */}
+              <div
+                aria-hidden="true"
+                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', zIndex: 0,
+                  background: `linear-gradient(135deg, ${WARM.primarySoft} 0%, ${WARM.paper} 55%, ${WARM.primarySoft} 100%)` }}
+              />
+              <div style={{ position: 'absolute', inset: 0, background: `${WARM.paper}99`, zIndex: 1 }}/>
+              <div style={{ position: 'relative', zIndex: 2, background: 'transparent' }}>
+
+              {/* ── Minimal centered line: positioning + capability tags ── */}
+              <div style={{
+                display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: 18,
+                padding: '56px 32px', borderBottom: `1px solid ${WARM.hairline}`,
+              }}>
+                <p style={{
+                  margin: 0, maxWidth: 560, fontFamily: FONT.display, fontSize: 'clamp(18px, 2.4vw, 22px)',
+                  fontWeight: 500, color: WARM.ink, lineHeight: 1.45,
+                }}>
+                  Built for how schools actually buy, equip, and maintain classrooms — one line, one PO, one renewal date.
+                </p>
+                <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 10 }}>
+                  {tags.map(t => (
+                    <span key={t} style={{
+                      display: 'inline-flex', alignItems: 'center', gap: 7,
+                      padding: '7px 14px', borderRadius: R.pill,
+                      border: `1px solid ${WARM.hairline}`, background: `${WARM.paper}cc`,
+                      fontFamily: FONT.mono, fontSize: 10, letterSpacing: '0.08em', color: WARM.mute,
+                    }}>
+                      <span style={{ width: 5, height: 5, borderRadius: '50%', background: WARM.primary, flexShrink: 0 }}/>
+                      {t.toUpperCase()}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* ── Bottom: contact strip ── */}
+              <div className="trust-bottom" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '20px 32px', background: WARM.paper2, flexWrap: 'wrap', gap: 16 }}>
+                <div style={{ display: 'flex', gap: 32, flexWrap: 'wrap' }}>
+                  {[
+                    { icon: '📍', label: 'New York City · Almaty, KZ' },
+                    { icon: '✉️', label: 'sales@intellectumus.com' },
+                    { icon: '📞', label: '+1 (212) 555-0100 · M–F 9–6 ET' },
+                  ].map(c => (
+                    <div key={c.label} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                      <span style={{ fontSize: 14 }}>{c.icon}</span>
+                      <span style={{ fontFamily: FONT.body, fontSize: 12.5, color: WARM.ink2 }}>{c.label}</span>
+                    </div>
+                  ))}
+                </div>
+                <Cta accent={WARM.primary} onClick={onQuoteClick}>Request a quote →</Cta>
+              </div>
+
+              </div>
+            </div>
+          </Reveal>
+        </section>
+      );
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // EQUIPMENT MATCHER (LP function — elevated version)
+    // ═══════════════════════════════════════════════════════════
+
+    function EquipmentMatcher({ onClose, embedded = false }) {
+      const [step, setStep] = React.useState(1);
+      const [form, setForm] = React.useState({ schoolType: '', state: '', focusArea: '', budget: '', file: null });
+      const [errors, setErrors] = React.useState({});
+      const [submitted, setSubmitted] = React.useState(false);
+      const [loading, setLoading] = React.useState(false);
+
+      const us_states = ['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming'];
+
+      const handleChange = e => setForm(p => ({ ...p, [e.target.name]: e.target.value }));
+      const handleFile = e => setForm(p => ({ ...p, file: e.target.files[0] }));
+
+      const validateStep1 = () => {
+        const e = {};
+        if (!form.schoolType) e.schoolType = 'Please select a school type';
+        if (!form.state) e.state = 'Please select your state';
+        setErrors(e);
+        return Object.keys(e).length === 0;
+      };
+      const validateStep2 = () => {
+        const e = {};
+        if (!form.focusArea) e.focusArea = 'Please select a focus area';
+        setErrors(e);
+        return Object.keys(e).length === 0;
+      };
+      const handleSubmit = e => {
+        e.preventDefault();
+        if (!validateStep2()) return;
+        setLoading(true);
+        setTimeout(() => { setLoading(false); setSubmitted(true); }, 1800);
+      };
+
+      const inner = submitted ? (
+        <div style={{ textAlign: 'center', padding: '20px 0' }}>
+          <div style={{ width: 64, height: 64, borderRadius: '50%', background: '#e4f7f0', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', fontSize: 28 }}>✓</div>
+          <h3 style={{ margin: '0 0 10px', fontFamily: FONT.display, fontSize: 24, fontWeight: 700, color: WARM.ink }}>We're on it.</h3>
+          <p style={{ margin: '0 0 24px', fontFamily: FONT.body, fontSize: 15, color: WARM.ink2, lineHeight: 1.6 }}>
+            Our procurement specialist will send a matched equipment list within <strong>2 business hours</strong>. Check your inbox.
+          </p>
+          <Cta accent={WARM.primary} onClick={onClose || (() => setSubmitted(false))}>Done</Cta>
+        </div>
+      ) : (
+        <form onSubmit={handleSubmit}>
+          {/* Step indicator */}
+          <div style={{ display: 'flex', gap: 6, marginBottom: 28 }}>
+            {[1, 2].map(s => (
+              <div key={s} style={{ flex: 1, height: 3, borderRadius: 99, background: s <= step ? WARM.primary : WARM.hairline, transition: 'background 0.3s' }}/>
+            ))}
+          </div>
+
+          {step === 1 && (
+            <>
+              <div className="field-group">
+                <label className="field-label" htmlFor="schoolType">School type</label>
+                <select id="schoolType" name="schoolType" value={form.schoolType} onChange={handleChange} className="field-input" aria-invalid={!!errors.schoolType} aria-describedby={errors.schoolType ? 'schoolType-err' : undefined} required>
+                  <option value="">Select school type</option>
+                  <option value="elementary">Elementary School (K–5)</option>
+                  <option value="middle">Middle School (6–8)</option>
+                  <option value="high">High School (9–12)</option>
+                  <option value="k12">K–12 Campus</option>
+                  <option value="university">University / College</option>
+                  <option value="district">Full District</option>
+                </select>
+                {errors.schoolType && <span id="schoolType-err" role="alert" style={{ fontSize: 12, color: '#c0392b', marginTop: 4, display: 'block' }}>{errors.schoolType}</span>}
+              </div>
+              <div className="field-group">
+                <label className="field-label" htmlFor="state">State</label>
+                <select id="state" name="state" value={form.state} onChange={handleChange} className="field-input" aria-invalid={!!errors.state} aria-describedby={errors.state ? 'state-err' : undefined} required>
+                  <option value="">Select state</option>
+                  {us_states.map(s => <option key={s} value={s}>{s}</option>)}
+                </select>
+                {errors.state && <span id="state-err" role="alert" style={{ fontSize: 12, color: '#c0392b', marginTop: 4, display: 'block' }}>{errors.state}</span>}
+              </div>
+              <div className="field-group">
+                <label className="field-label" htmlFor="budget">Approximate budget</label>
+                <select id="budget" name="budget" value={form.budget} onChange={handleChange} className="field-input">
+                  <option value="">Prefer not to say</option>
+                  <option value="under100k">Under $100,000</option>
+                  <option value="100-500k">$100,000 – $500,000</option>
+                  <option value="500k-2m">$500,000 – $2M</option>
+                  <option value="over2m">Over $2M</option>
+                </select>
+              </div>
+              <Cta accent={WARM.primary} onClick={() => validateStep1() && setStep(2)} type="button">
+                Next: Focus area →
+              </Cta>
+            </>
+          )}
+
+          {step === 2 && (
+            <>
+              <div className="field-group">
+                <label className="field-label" htmlFor="focusArea">Primary focus area</label>
+                <select id="focusArea" name="focusArea" value={form.focusArea} onChange={handleChange} className="field-input" aria-invalid={!!errors.focusArea} aria-describedby={errors.focusArea ? 'focusArea-err' : undefined} required>
+                  <option value="">Select focus area</option>
+                  <option value="classrooms">Classrooms (furniture + AV)</option>
+                  <option value="labs">Computer Labs (devices + carts)</option>
+                  <option value="science">Science Labs (benches + kits)</option>
+                  <option value="library">Library & Media Center</option>
+                  <option value="cafeteria">Cafeteria & Common Areas</option>
+                  <option value="outdoor">Outdoor & Play Spaces</option>
+                  <option value="complete">Complete Campus Fitout</option>
+                </select>
+                {errors.focusArea && <span id="focusArea-err" role="alert" style={{ fontSize: 12, color: '#c0392b', marginTop: 4, display: 'block' }}>{errors.focusArea}</span>}
+              </div>
+              <div className="field-group">
+                <label className="field-label">Upload specs / floor plans (optional)</label>
+                <label className="field-upload" style={{ display: 'block', cursor: 'pointer' }}>
+                  <input type="file" accept=".pdf,.xlsx,.xls,.csv,.dwg,.png,.jpg" onChange={handleFile}/>
+                  {form.file
+                    ? <span style={{ color: WARM.primary, fontWeight: 600 }}>📎 {form.file.name}</span>
+                    : <span>Drop files here or <span style={{ color: WARM.primary, fontWeight: 600 }}>browse</span><br/><span style={{ fontSize: 12 }}>PDF, Excel, DWG, images accepted</span></span>
+                  }
+                </label>
+              </div>
+              <div style={{ display: 'flex', gap: 10 }}>
+                <button type="button" onClick={() => setStep(1)} style={{
+                  all: 'unset', cursor: 'pointer', fontFamily: FONT.body, fontSize: 14,
+                  fontWeight: 600, color: WARM.mute, padding: '12px 18px',
+                }}>← Back</button>
+                <Cta accent={WARM.primary} type="submit">
+                  {loading
+                    ? <span style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                        <span style={{ width: 14, height: 14, border: '2px solid rgba(255,255,255,0.4)', borderTopColor: '#fff', borderRadius: '50%', animation: 'spin 0.7s linear infinite', display: 'inline-block' }}/>
+                        Matching…
+                      </span>
+                    : 'Find matching equipment →'
+                  }
+                </Cta>
+              </div>
+            </>
+          )}
+        </form>
+      );
+
+      if (embedded) {
+        return (
+          <div style={{ background: WARM.card, borderRadius: R.lg, border: `1.5px solid ${WARM.hairline}`, padding: '36px' }}>
+            {inner}
+          </div>
+        );
+      }
+
+      return (
+        <div className="modal-overlay" onClick={e => e.target === e.currentTarget && onClose && onClose()}>
+          <div className="modal-box">
+            <button className="modal-close" onClick={onClose}>✕</button>
+            <div style={{ marginBottom: 24 }}>
+              <div style={{ fontFamily: FONT.mono, fontSize: 10.5, letterSpacing: '0.15em', color: WARM.mute, marginBottom: 8 }}>EQUIPMENT MATCHER</div>
+              <h2 style={{ margin: 0, fontFamily: FONT.display, fontSize: 26, fontWeight: 700, letterSpacing: '-0.025em', color: WARM.ink }}>Find your perfect fitout</h2>
+              <p style={{ margin: '8px 0 0', fontFamily: FONT.body, fontSize: 14, color: WARM.ink2, lineHeight: 1.5 }}>
+                Tell us about your school — we'll send a matched equipment list within 2 hours.
+              </p>
+            </div>
+            {inner}
+          </div>
+        </div>
+      );
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // WHY CHOOSE US (LP function — elevated, integrated design)
+    // ═══════════════════════════════════════════════════════════
+
+    function WhyChooseUs() {
+      const reasons = [
+        {
+          n: '01', accent: '#3E4193',
+          title: 'ADA & Safety Compliant',
+          desc: 'Every product line meets US accessibility standards (ADA), ANSI/BIFMA testing, CPSC safety codes, and state-level procurement requirements.',
+          icon: (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="10" stroke="#3E4193" strokeWidth="1.8"/>
+              <path d="M7.5 12l3 3 5.5-5.5" stroke="#3E4193" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          ),
+        },
+        {
+          n: '02', accent: '#1aaf76',
+          title: 'Proven Logistics Network',
+          desc: 'Same-week delivery across 48 states. Dedicated freight coordinators handle loading dock scheduling, inside delivery, and room-level placement.',
+          icon: (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <rect x="1" y="8" width="15" height="11" rx="2" stroke="#1aaf76" strokeWidth="1.8"/>
+              <path d="M16 10h4l3 4v5h-7V10z" stroke="#1aaf76" strokeWidth="1.8" strokeLinejoin="round"/>
+              <circle cx="5.5" cy="19.5" r="1.5" fill="#1aaf76"/>
+              <circle cx="17.5" cy="19.5" r="1.5" fill="#1aaf76"/>
+            </svg>
+          ),
+        },
+        {
+          n: '03', accent: '#FBBC1B',
+          title: 'Dedicated Account Teams',
+          desc: 'Your district gets a named account manager, a procurement specialist, and a project coordinator. One contact for everything, every time.',
+          icon: (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <circle cx="9" cy="8" r="3.5" stroke="#FBBC1B" strokeWidth="1.8"/>
+              <circle cx="16" cy="8" r="2.5" stroke="#FBBC1B" strokeWidth="1.8"/>
+              <path d="M2 19c0-3.3 3.1-6 7-6s7 2.7 7 6" stroke="#FBBC1B" strokeWidth="1.8" strokeLinecap="round"/>
+              <path d="M16 13c2.3.5 4 2.3 4 4.5" stroke="#FBBC1B" strokeWidth="1.8" strokeLinecap="round"/>
+            </svg>
+          ),
+        },
+        {
+          n: '04', accent: '#B56AFF',
+          title: 'Design Flexibility',
+          desc: 'Custom layouts, school colors, ADA pathway planning — our design team works with your architect and facilities manager before a single PO is issued.',
+          icon: (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <rect x="3" y="3" width="8" height="8" rx="1.5" stroke="#B56AFF" strokeWidth="1.8"/>
+              <rect x="13" y="3" width="8" height="8" rx="1.5" stroke="#B56AFF" strokeWidth="1.8"/>
+              <rect x="3" y="13" width="8" height="8" rx="1.5" stroke="#B56AFF" strokeWidth="1.8"/>
+              <rect x="13" y="13" width="8" height="8" rx="1.5" stroke="#B56AFF" strokeWidth="1.8"/>
+            </svg>
+          ),
+        },
+        {
+          n: '05', accent: '#8b6535',
+          title: 'Co-Terminus Warranties',
+          desc: 'Bundle any product lines and all warranties expire on the same day. One renewal, one phone call — no more tracking a dozen different expiry dates.',
+          icon: (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12l2 2 4-4M7.8 4.8A7 7 0 1 0 19.2 16.2" stroke="#8b6535" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M21 3l-4 4M17 3h4v4" stroke="#8b6535" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          ),
+        },
+        {
+          n: '06', accent: '#3E4193',
+          title: 'E-Rate Compatible',
+          desc: 'All digital equipment and IoT infrastructure is pre-categorized for E-Rate filing. Our team files alongside you to maximize your district\'s reimbursement.',
+          icon: (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L2 7v10l10 5 10-5V7L12 2z" stroke="#3E4193" strokeWidth="1.8" strokeLinejoin="round"/>
+              <path d="M2 7l10 5m0 0l10-5m-10 5v10" stroke="#3E4193" strokeWidth="1.8" strokeLinecap="round"/>
+            </svg>
+          ),
+        },
+      ];
+
+      return (
+        <section style={{ padding: '64px 36px 0', maxWidth: 1400, margin: '0 auto' }}>
+          <Reveal>
+            <SectionHead eyebrow="WHY INTELLECTUMUS" title="Built for US procurement"/>
+          </Reveal>
+          <div className="why-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 14 }}>
+            {reasons.map((r, i) => (
+              <Reveal key={r.n} delay={i * 55}>
+                <div style={{
+                  padding: '26px 24px', background: WARM.card,
+                  border: `1.5px solid ${WARM.hairline}`, borderRadius: R.md,
+                  transition: 'border-color .18s, box-shadow .18s',
+                }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = r.accent + '50'; e.currentTarget.style.boxShadow = `0 8px 24px ${r.accent}14`; }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = WARM.hairline; e.currentTarget.style.boxShadow = 'none'; }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: 14, marginBottom: 14 }}>
+                    <div style={{ width: 44, height: 44, borderRadius: 12, background: r.accent + '12', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                      {r.icon}
+                    </div>
+                    <div>
+                      <div style={{ fontFamily: FONT.mono, fontSize: 10, color: WARM.mute, letterSpacing: '0.12em', marginBottom: 4 }}>{r.n}</div>
+                      <h3 style={{ margin: 0, fontFamily: FONT.display, fontSize: 17, fontWeight: 600, color: WARM.ink, letterSpacing: '-0.015em' }}>{r.title}</h3>
+                    </div>
+                  </div>
+                  <p style={{ margin: 0, fontFamily: FONT.body, fontSize: 13.5, color: WARM.ink2, lineHeight: 1.6 }}>{r.desc}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </section>
+      );
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // TESTIMONIAL WALL
+    // ═══════════════════════════════════════════════════════════
+
+    function TestimonialWall({ lines }) {
+      const testimonials = lines.map(L => ({ ...L.quote, accent: L.accent, line: L.name }));
+      return (
+        <section style={{ padding: '64px 36px 0', maxWidth: 1400, margin: '0 auto' }}>
+          <Reveal>
+            <SectionHead eyebrow="FROM THE DISTRICTS" title="Heard in the hallways"/>
+          </Reveal>
+          <div className="testimonial-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 14 }}>
+            {testimonials.slice(0, 3).map((t, i) => (
+              <Reveal key={i} delay={i * 70}>
+                <div style={{
+                  background: WARM.card, border: `1.5px solid ${WARM.hairline}`,
+                  borderRadius: R.md, padding: '28px 26px',
+                }}>
+                  <div style={{ width: 36, height: 3, borderRadius: 99, background: t.accent, marginBottom: 18 }}/>
+                  <p style={{ margin: '0 0 18px', fontFamily: FONT.display, fontSize: 17, fontWeight: 500, color: WARM.ink, lineHeight: 1.5, fontStyle: 'italic' }}>{t.text}</p>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                    <div style={{ width: 32, height: 32, borderRadius: '50%', background: t.accent + '20', border: `1.5px solid ${t.accent}40`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <span style={{ fontFamily: FONT.mono, fontSize: 11, color: t.accent }}>{i + 1}</span>
+                    </div>
+                    <div>
+                      <div style={{ fontFamily: FONT.body, fontSize: 12.5, fontWeight: 600, color: WARM.ink }}>{t.who.replace('— ', '')}</div>
+                      <div style={{ fontFamily: FONT.mono, fontSize: 10, color: WARM.mute, letterSpacing: '0.08em' }}>{t.line.toUpperCase()}</div>
+                    </div>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </section>
+      );
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // EQUIPMENT MATCHER SECTION (inline on overview)
+    // ═══════════════════════════════════════════════════════════
+
+    // Department image carousel — auto-rotates through LINES, used in MatcherSection
+    function DepartmentCarousel({ lines }) {
+      const [idx, setIdx] = React.useState(0);
+      const [paused, setPaused] = React.useState(false);
+
+      React.useEffect(() => {
+        if (paused) return;
+        const t = setInterval(() => setIdx(i => (i + 1) % lines.length), 4200);
+        return () => clearInterval(t);
+      }, [paused, lines.length]);
+
+      const L = lines[idx];
+
+      return (
+        <div
+          onMouseEnter={() => setPaused(true)}
+          onMouseLeave={() => setPaused(false)}
+          style={{ position: 'relative', borderRadius: R.lg, overflow: 'hidden', aspectRatio: '16/10', width: '100%', background: WARM.ink }}
+        >
+          {lines.map((line, i) => (
+            <div key={line.id} style={{
+              position: 'absolute', inset: 0,
+              opacity: i === idx ? 1 : 0,
+              transition: 'opacity 0.6s ease',
+              pointerEvents: i === idx ? 'auto' : 'none',
+            }}>
+              <Plate label={line.fullName} accent={line.accent} radius={0} height="100%" kicker={`${line.n} · ${line.name}`} src={line.image} style={{ height: '100%' }}/>
+              {/* gradient scrim + caption */}
+              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 40%, rgba(20,16,10,0.78) 100%)' }}/>
+              <div style={{ position: 'absolute', left: 24, right: 24, bottom: 22 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 6 }}>
+                  <LineChip L={line} size={26}/>
+                  <span style={{ fontFamily: FONT.display, fontSize: 19, fontWeight: 700, color: '#fff', letterSpacing: '-0.02em' }}>{line.name}</span>
+                </div>
+                <div style={{ fontFamily: FONT.body, fontSize: 13, color: 'rgba(255,255,255,0.78)', lineHeight: 1.45, maxWidth: 380 }}>{line.tagline}</div>
+              </div>
+            </div>
+          ))}
+
+          {/* dot indicators */}
+          <div style={{ position: 'absolute', top: 18, right: 20, display: 'flex', gap: 7, zIndex: 2 }}>
+            {lines.map((line, i) => (
+              <button key={line.id} onClick={() => setIdx(i)} aria-label={`Show ${line.name}`} style={{
+                all: 'unset', cursor: 'pointer', width: i === idx ? 20 : 7, height: 7, borderRadius: R.pill,
+                background: i === idx ? '#fff' : 'rgba(255,255,255,0.4)',
+                transition: 'all 0.3s ease',
+              }}/>
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+    // Crossfading classroom-photo panel for the hero sidebar — replaces the department carousel there.
+    // Drop 4-5 classroom/product photos here — cycles automatically with crossfade + captions.
+    const HERO_PHOTOS = [
+      { src: 'iStock-1358014313-scaled-1.jpg',     caption: 'Hands-on support, every classroom' },
+      { src: 'istockphoto-1409722748-612x612.jpg', caption: 'Built for how students actually learn' },
+      { src: 'school_dekho_banner2.webp',          caption: 'One partner, every grade level' },
+      { src: 'STOCK-EDUCATION---SCHOOL---CLASSROOM_18ccfa5a160_large.avif', caption: 'Spaces that work as hard as the lesson' },
+      // { src: 'images/photo-5.jpg', caption: 'Add a 5th photo here' },
+    ];
+
+    function HeroPhotoPanel({ photos = HERO_PHOTOS }) {
+      const [idx, setIdx] = React.useState(0);
+      const [paused, setPaused] = React.useState(false);
+
+      React.useEffect(() => {
+        if (paused || photos.length < 2) return;
+        const t = setInterval(() => setIdx(i => (i + 1) % photos.length), 5200);
+        return () => clearInterval(t);
+      }, [paused, photos.length]);
+
+      return (
+        <div onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}
+          style={{ position: 'relative', borderRadius: R.lg, overflow: 'hidden', aspectRatio: '16/10', width: '100%', background: WARM.ink }}>
+          {photos.map((p, i) => (
+            <div key={p.src} style={{ position: 'absolute', inset: 0, opacity: i === idx ? 1 : 0, transition: 'opacity 0.8s ease' }}>
+              <img src={p.src} alt={p.caption || ''} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}/>
+              <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 45%, rgba(20,16,10,0.74) 100%)' }}/>
+              {p.caption && (
+                <div style={{ position: 'absolute', left: 24, right: 24, bottom: 22, fontFamily: FONT.body, fontSize: 14, fontWeight: 600, color: '#fff', letterSpacing: '-0.01em' }}>
+                  {p.caption}
+                </div>
+              )}
+            </div>
+          ))}
+          {photos.length > 1 && (
+            <div style={{ position: 'absolute', top: 18, right: 20, display: 'flex', gap: 7, zIndex: 2 }}>
+              {photos.map((p, i) => (
+                <button key={p.src} onClick={() => setIdx(i)} aria-label={`Show photo ${i + 1}`} style={{
+                  all: 'unset', cursor: 'pointer', width: i === idx ? 20 : 7, height: 7, borderRadius: R.pill,
+                  background: i === idx ? '#fff' : 'rgba(255,255,255,0.4)',
+                  transition: 'all 0.3s ease',
+                }}/>
+              ))}
+            </div>
+          )}
+        </div>
+      );
+    }
+
+    function MatcherSection({ onMatchClick }) {
+      return (
+        <section style={{ padding: '64px 36px 0', maxWidth: 1400, margin: '0 auto' }}>
+          <div className="matcher-split" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}>
+            <Reveal>
+              <div>
+                <div style={{ fontFamily: FONT.mono, fontSize: 10.5, letterSpacing: '0.15em', color: WARM.mute, marginBottom: 12 }}>EQUIPMENT MATCHER</div>
+                <h2 style={{ margin: '0 0 16px', fontFamily: FONT.display, fontSize: 36, fontWeight: 700, letterSpacing: '-0.03em', color: WARM.ink, lineHeight: 1.08 }}>
+                  Tell us your school.<br/>We'll find the fit.
+                </h2>
+                <p style={{ margin: '0 0 28px', fontFamily: FONT.body, fontSize: 16, color: WARM.ink2, lineHeight: 1.6 }}>
+                  Upload your floor plans or technical specs — our procurement team will match them to the right product lines and send you a scoped quote within 2 business hours.
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 32 }}>
+                  {[
+                    'Matched to your grade levels and state standards',
+                    'Sized to your floor plan and room count',
+                    'Priced with E-Rate eligibility flagged',
+                  ].map(s => (
+                    <div key={s} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
+                      <div style={{ width: 18, height: 18, borderRadius: '50%', background: WARM.primarySoft, border: `1.5px solid ${WARM.primary}30`, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 1 }}>
+                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke={WARM.primary} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                      </div>
+                      <span style={{ fontFamily: FONT.body, fontSize: 14, color: WARM.ink2, lineHeight: 1.45 }}>{s}</span>
+                    </div>
+                  ))}
+                </div>
+                <Cta accent={WARM.primary} onClick={onMatchClick}>Start the matcher →</Cta>
+              </div>
+            </Reveal>
+            <Reveal delay={80}>
+              {/* ── STOCK VIDEO CAROUSEL ── */}
+              <div className="matcher-preview">
+                <DepartmentCarousel lines={LINES}/>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+      );
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // CTA BAND
+    // ═══════════════════════════════════════════════════════════
+
+    function CTABand({ accent = WARM.primary, eyebrow, title, body, primary, secondary, onPrimaryClick }) {
+      return (
+        <section style={{ padding: '64px 36px 56px', maxWidth: 1400, margin: '0 auto' }}>
+          <Reveal>
+            <div style={{
+              position: 'relative', overflow: 'hidden', borderRadius: R.lg,
+              background: accent, padding: '52px 52px', color: '#fff',
+            }}>
+              <div style={{ position: 'absolute', inset: 0, opacity: 0.1, backgroundImage: 'repeating-linear-gradient(135deg, #fff 0 1px, transparent 1px 20px)' }}/>
+              <div style={{ position: 'absolute', top: -80, right: -80, width: 300, height: 300, borderRadius: '50%', background: 'rgba(255,255,255,0.06)' }}/>
+              <div style={{ position: 'relative', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 40, flexWrap: 'wrap' }}>
+                <div style={{ maxWidth: 640 }}>
+                  <div style={{ fontFamily: FONT.mono, fontSize: 11, letterSpacing: '0.14em', color: 'rgba(255,255,255,0.7)', marginBottom: 12 }}>{eyebrow}</div>
+                  <h2 style={{ margin: 0, fontFamily: FONT.display, fontSize: 40, fontWeight: 700, letterSpacing: '-0.03em', lineHeight: 1.04 }}>{title}</h2>
+                  {body && <p style={{ marginTop: 14, fontFamily: FONT.body, fontSize: 16, lineHeight: 1.55, color: 'rgba(255,255,255,0.88)' }}>{body}</p>}
+                </div>
+                <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+                  <Cta variant="light" onClick={onPrimaryClick}>{primary} →</Cta>
+                  {secondary && <Cta variant="lightGhost" href="#contact">{secondary}</Cta>}
+                </div>
+              </div>
+            </div>
+          </Reveal>
+        </section>
+      );
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // QUOTE MODAL (global)
+    // ═══════════════════════════════════════════════════════════
+
+    function QuoteModal({ onClose }) {
+      const [form, setForm] = React.useState({ name: '', email: '', district: '', phone: '', notes: '' });
+      const [errors, setErrors] = React.useState({});
+      const [submitted, setSubmitted] = React.useState(false);
+      const [loading, setLoading] = React.useState(false);
+
+      const handleChange = e => {
+        setForm(p => ({ ...p, [e.target.name]: e.target.value }));
+        if (errors[e.target.name]) setErrors(p => ({ ...p, [e.target.name]: '' }));
+      };
+      const validate = () => {
+        const e = {};
+        if (!form.name.trim()) e.name = 'Name is required';
+        if (!form.email.trim()) e.email = 'Work email is required';
+        else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = 'Please enter a valid email';
+        if (!form.district.trim()) e.district = 'District or school name is required';
+        setErrors(e);
+        return Object.keys(e).length === 0;
+      };
+      const handleSubmit = e => {
+        e.preventDefault();
+        if (!validate()) return;
+        setLoading(true);
+        setTimeout(() => { setLoading(false); setSubmitted(true); }, 1600);
+      };
+
+      return (
+        <div className="modal-overlay" onClick={e => e.target === e.currentTarget && onClose()}>
+          <div className="modal-box" style={{ maxWidth: 500 }}>
+            <button className="modal-close" onClick={onClose}>✕</button>
+            {submitted ? (
+              <div style={{ textAlign: 'center', padding: '20px 0' }}>
+                <div style={{ width: 64, height: 64, borderRadius: '50%', background: WARM.primarySoft, display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', fontSize: 28 }}>📬</div>
+                <h3 style={{ margin: '0 0 10px', fontFamily: FONT.display, fontSize: 24, fontWeight: 700, color: WARM.ink }}>Quote request received.</h3>
+                <p style={{ margin: '0 0 24px', fontFamily: FONT.body, fontSize: 15, color: WARM.ink2, lineHeight: 1.6 }}>
+                  Your dedicated account manager will reach out within <strong>1 business day</strong> with a scoped commercial offer.
+                </p>
+                <Cta accent={WARM.primary} onClick={onClose}>Close</Cta>
+              </div>
+            ) : (
+              <>
+                <div style={{ marginBottom: 24 }}>
+                  <div style={{ fontFamily: FONT.mono, fontSize: 10.5, letterSpacing: '0.15em', color: WARM.mute, marginBottom: 8 }}>COMMERCIAL OFFER</div>
+                  <h2 style={{ margin: 0, fontFamily: FONT.display, fontSize: 26, fontWeight: 700, letterSpacing: '-0.025em', color: WARM.ink }}>Request a quote</h2>
+                  <p style={{ margin: '8px 0 0', fontFamily: FONT.body, fontSize: 14, color: WARM.ink2 }}>We'll respond within 1 business day with a scoped proposal.</p>
+                </div>
+                <form onSubmit={handleSubmit}>
+                  <div className="quote-form-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14, marginBottom: 14 }}>
+                    <div className="field-group" style={{ margin: 0 }}>
+                      <label className="field-label" htmlFor="q-name">First & last name</label>
+                      <input id="q-name" name="name" value={form.name} onChange={handleChange} className="field-input" placeholder="Dr. Jane Smith" aria-invalid={!!errors.name} aria-describedby={errors.name ? 'q-name-err' : undefined} required/>
+                      {errors.name && <span id="q-name-err" role="alert" style={{ fontSize: 12, color: '#c0392b', marginTop: 4, display: 'block' }}>{errors.name}</span>}
+                    </div>
+                    <div className="field-group" style={{ margin: 0 }}>
+                      <label className="field-label" htmlFor="q-email">Work email</label>
+                      <input id="q-email" name="email" type="email" value={form.email} onChange={handleChange} className="field-input" placeholder="jsmith@district.edu" aria-invalid={!!errors.email} aria-describedby={errors.email ? 'q-email-err' : undefined} required/>
+                      {errors.email && <span id="q-email-err" role="alert" style={{ fontSize: 12, color: '#c0392b', marginTop: 4, display: 'block' }}>{errors.email}</span>}
+                    </div>
+                  </div>
+                  <div className="field-group">
+                    <label className="field-label" htmlFor="q-district">District or school name</label>
+                    <input id="q-district" name="district" value={form.district} onChange={handleChange} className="field-input" placeholder="Jefferson County Unified School District" aria-invalid={!!errors.district} aria-describedby={errors.district ? 'q-district-err' : undefined} required/>
+                    {errors.district && <span id="q-district-err" role="alert" style={{ fontSize: 12, color: '#c0392b', marginTop: 4, display: 'block' }}>{errors.district}</span>}
+                  </div>
+                  <div className="field-group">
+                    <label className="field-label" htmlFor="q-phone">Phone (optional)</label>
+                    <input id="q-phone" name="phone" type="tel" value={form.phone} onChange={handleChange} className="field-input" placeholder="+1 (555) 000-0000"/>
+                  </div>
+                  <div className="field-group">
+                    <label className="field-label" htmlFor="q-notes">What do you need? (optional)</label>
+                    <textarea id="q-notes" name="notes" value={form.notes} onChange={handleChange} className="field-input" rows={3} placeholder="e.g. 40 classrooms, STEM lab, district-wide furniture refresh…" style={{ resize: 'vertical' }}/>
+                  </div>
+                  <Cta accent={WARM.primary} type="submit">
+                    {loading
+                      ? <span style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                          <span style={{ width: 14, height: 14, border: '2px solid rgba(255,255,255,0.4)', borderTopColor: '#fff', borderRadius: '50%', animation: 'spin 0.7s linear infinite', display: 'inline-block' }}/>
+                          Sending…
+                        </span>
+                      : 'Send quote request →'
+                    }
+                  </Cta>
+                </form>
+              </>
+            )}
+          </div>
+        </div>
+      );
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // CONTACT SECTION
+    // ═══════════════════════════════════════════════════════════
+
+    function ContactSection({ onQuoteClick }) {
+      return (
+        <section id="contact" style={{ padding: '64px 36px 0', maxWidth: 1400, margin: '0 auto' }}>
+          <Reveal>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48 }}>
+              <div>
+                <div style={{ fontFamily: FONT.mono, fontSize: 10.5, letterSpacing: '0.15em', color: WARM.mute, marginBottom: 12 }}>CONTACT US</div>
+                <h2 style={{ margin: '0 0 16px', fontFamily: FONT.display, fontSize: 36, fontWeight: 700, letterSpacing: '-0.03em', color: WARM.ink }}>
+                  Ready to outfit<br/>your school?
+                </h2>
+                <p style={{ margin: '0 0 32px', fontFamily: FONT.body, fontSize: 16, color: WARM.ink2, lineHeight: 1.6 }}>
+                  Get a personalized commercial offer. We'll work with your budget, timeline, and unique requirements — no generic catalog quotes.
+                </p>
+                <Cta accent={WARM.primary} onClick={onQuoteClick}>Request your custom quote →</Cta>
+                <div style={{ marginTop: 36, display: 'flex', flexDirection: 'column', gap: 14 }}>
+                  {[
+                    { icon: '📍', label: 'New York City, NY · Almaty, KZ' },
+                    { icon: '📞', label: '+1 (212) 555-0100 · Business hours: M–F 9–6 ET' },
+                    { icon: '✉️', label: 'sales@intellectumus.com' },
+                  ].map(c => (
+                    <div key={c.label} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                      <span style={{ fontSize: 18 }}>{c.icon}</span>
+                      <span style={{ fontFamily: FONT.body, fontSize: 14, color: WARM.ink2 }}>{c.label}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div style={{ background: WARM.card, border: `1.5px solid ${WARM.hairline}`, borderRadius: R.lg, padding: '32px', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 16 }}>
+                {/* Quick contact cards */}
+                {[
+                  { title: 'Sales & Procurement', desc: 'Request quotes, bundle pricing, district contracts', accent: WARM.primary, href: '#' },
+                  { title: 'Technical Support', desc: 'Installation, warranty claims, product specs', accent: '#1aaf76', href: '#' },
+                  { title: 'E-Rate Assistance', desc: 'Filing support, eligibility review, reimbursement help', accent: '#FBBC1B', href: '#' },
+                ].map(c => (
+                  <div key={c.title} style={{
+                    display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16,
+                    padding: '16px 20px', borderRadius: R.md,
+                    border: `1.5px solid ${WARM.hairline}`, background: '#fff',
+                    cursor: 'pointer', transition: 'border-color .15s',
+                  }}
+                  onMouseEnter={e => e.currentTarget.style.borderColor = c.accent + '60'}
+                  onMouseLeave={e => e.currentTarget.style.borderColor = WARM.hairline}
+                  >
+                    <div>
+                      <div style={{ fontFamily: FONT.body, fontWeight: 700, fontSize: 14, color: WARM.ink, marginBottom: 3 }}>{c.title}</div>
+                      <div style={{ fontFamily: FONT.body, fontSize: 12.5, color: WARM.ink2 }}>{c.desc}</div>
+                    </div>
+                    <span style={{ fontFamily: FONT.mono, fontSize: 16, color: c.accent }}>→</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Reveal>
+        </section>
+      );
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // FOOTER
+    // ═══════════════════════════════════════════════════════════
+
+    function Footer({ lines }) {
+      return (
+        <footer role="contentinfo" style={{ borderTop: `1px solid ${WARM.hairline}`, background: WARM.paper, padding: '48px 36px 28px', marginTop: 64 }}>
+          <div className="footer-grid" style={{ maxWidth: 1400, margin: '0 auto', display: 'grid', gridTemplateColumns: '1.8fr repeat(5, 1fr) 1fr', gap: 28 }}>
+            <div>
+              <Wordmark size={17}/>
+              <div style={{ marginTop: 14, fontFamily: FONT.body, fontSize: 12.5, color: WARM.ink2, lineHeight: 1.6, maxWidth: 240 }}>
+                Fitting out US schools end-to-end. Twelve years of K–12 expertise from 18 countries, now serving American districts.
+              </div>
+              <div style={{ marginTop: 16, fontFamily: FONT.mono, fontSize: 10, color: WARM.mute, letterSpacing: '0.06em' }}>© 2026 INTELLECTUMUS, INC.</div>
+            </div>
+            {lines.map(L => (
+              <div key={L.id}>
+                <a href={`#/line/${L.id}`} style={{ display: 'inline-flex', alignItems: 'center', gap: 7, marginBottom: 10, textDecoration: 'none' }}>
+                  <span style={{ width: 8, height: 8, borderRadius: 2.5, background: L.accent }}/>
+                  <span style={{ fontFamily: FONT.body, fontSize: 11, fontWeight: 700, color: WARM.ink, letterSpacing: '0.03em', textTransform: 'uppercase' }}>{L.name}</span>
+                </a>
+                <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: 5 }}>
+                  {L.catalog.slice(0, 4).map(c => (
+                    <li key={c} style={{ fontFamily: FONT.body, fontSize: 12, color: WARM.ink2 }}>{c}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+            <div>
+              <div style={{ fontFamily: FONT.body, fontSize: 11, fontWeight: 700, color: WARM.ink, letterSpacing: '0.03em', textTransform: 'uppercase', marginBottom: 10 }}>Company</div>
+              <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column', gap: 6, fontFamily: FONT.body, fontSize: 12, color: WARM.ink2 }}>
+                <li>About</li>
+                <li>Press</li>
+                <li>Careers</li>
+                <li>Investors</li>
+                <li>ir@intellectumus.com</li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      );
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    // LINE PAGE (individual product line)
+    // ═══════════════════════════════════════════════════════════
+
+    function LineHero({ L }) {
+      const a = accentOf(L);
+      return (
+        <section style={{ padding: '28px 36px 0', maxWidth: 1400, margin: '0 auto' }}>
+          <div style={{ position: 'relative', borderRadius: R.lg, overflow: 'hidden', minHeight: 440 }}>
+            {/* ── LINE HERO IMAGE (Spot 3) ────────────────────────
+                Add a per-line photo URL to each line object in LINES:
+                  heroPhoto: '/images/digital-hero.webp'
+                Recommended: 1400×600px WebP, landscape, subject left-weighted.
+                The gradient scrim keeps the text readable.
+            ─────────────────────────────────────────────────── */}
+            {L.heroPhoto && (
+              <img
+                src={L.heroPhoto}
+                alt={`${L.fullName} — fitted out school space`}
+                loading="lazy"
+                decoding="async"
+                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center right' }}
+              />
+            )}
+            {/* Gradient — doubles as fallback bg and readability scrim over photo */}
+            <div style={{ position: 'absolute', inset: 0, background: L.heroPhoto ? `linear-gradient(90deg, ${a.soft}f0 0%, ${a.soft}80 40%, transparent 70%)` : `linear-gradient(135deg, ${a.c}20 0%, ${a.soft} 100%)` }}/>
+            {!L.heroPhoto && <div style={{ position: 'absolute', inset: 0, backgroundImage: `radial-gradient(${a.c}18 1px, transparent 1px)`, backgroundSize: '24px 24px' }}/>}
+            <div style={{ position: 'relative', padding: '52px 52px', maxWidth: 780 }}>
+              <div style={{ marginBottom: 18 }}>
+                <Pill accent={a.c}>{L.eyebrow}</Pill>
+              </div>
+              <h1 style={{ margin: '0 0 18px', fontFamily: FONT.display, fontWeight: 800, fontSize: 'clamp(40px,5vw,68px)', letterSpacing: '-0.04em', lineHeight: 0.95, color: WARM.ink }}>
+                {L.headline.split('\n').map((line, i) => <span key={i}>{line}{i === 0 ? <br/> : ''}</span>)}
+              </h1>
+              <p style={{ margin: '0 0 32px', fontFamily: FONT.body, fontSize: 16.5, color: WARM.ink2, lineHeight: 1.6, maxWidth: 560 }}>{L.lede}</p>
+              <Cta accent={a.c}>{L.cta.primary} →</Cta>
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    function LineFeatures({ L }) {
+      const a = accentOf(L);
+      return (
+        <section style={{ padding: '56px 36px 0', maxWidth: 1400, margin: '0 auto' }}>
+          <Reveal><SectionHead eyebrow={`${L.n} · ${L.name.toUpperCase()}`} title="What's in this line" accent={a.c}/></Reveal>
+          <div className="line-features" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 14 }}>
+            {L.features.map((f, i) => (
+              <Reveal key={f.tag} delay={i * 60}>
+                <div style={{ background: WARM.card, border: `1.5px solid ${WARM.hairline}`, borderRadius: R.md, overflow: 'hidden' }}>
+                  {/* ── FEATURE CARD IMAGE (Spot 4) ───────────────────
+                      Add photo URL to each feature object in LINES data:
+                        photo: '/images/panels-hero.webp'
+                      Recommended: 480×240px WebP, product shot on white bg.
+                  ─────────────────────────────────────────────── */}
+                  {f.photo
+                    ? <img src={f.photo} alt={f.alt || f.title} loading="lazy" decoding="async" style={{ width: '100%', height: 140, objectFit: 'cover', display: 'block' }}/>
+                    : <div style={{ height: 140, background: `linear-gradient(135deg, ${a.c}10, ${a.soft})`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <span style={{ fontFamily: FONT.mono, fontSize: 10, color: a.c, letterSpacing: '0.12em' }}>PHOTO · {f.tag}</span>
+                      </div>
+                  }
+                  <div style={{ padding: '18px 20px 20px' }}>
+                    <div style={{ fontFamily: FONT.mono, fontSize: 9.5, letterSpacing: '0.14em', color: a.c, marginBottom: 10 }}>{f.tag}</div>
+                    <div style={{ fontFamily: FONT.display, fontSize: 22, fontWeight: 600, color: WARM.ink, marginBottom: 6 }}>{f.title}</div>
+                    <div style={{ fontFamily: FONT.body, fontSize: 13, color: WARM.ink2, lineHeight: 1.5, marginBottom: 14 }}>{f.blurb}</div>
+                    <div style={{ fontFamily: FONT.mono, fontSize: 10, color: WARM.mute }}>{typeof f.skus === 'number' ? `${f.skus} SKUs` : f.skus}</div>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </section>
+      );
+    }
+
+    function LineStats({ L }) {
+      const a = accentOf(L);
+      return (
+        <section style={{ padding: '56px 36px 0', maxWidth: 1400, margin: '0 auto' }}>
+          <Reveal>
+            <div style={{ background: a.c, borderRadius: R.lg, padding: '40px 48px', display: 'flex' }}>
+              {L.stats.map((s, i) => (
+                <div key={s.k} style={{ flex: 1, textAlign: 'center', padding: '8px 0', borderRight: i < L.stats.length - 1 ? '1px solid rgba(255,255,255,0.2)' : 'none' }}>
+                  <div style={{ fontFamily: FONT.display, fontWeight: 800, fontSize: 44, letterSpacing: '-0.04em', color: '#fff', lineHeight: 1 }}>{s.v}</div>
+                  <div style={{ fontFamily: FONT.mono, fontSize: 10.5, letterSpacing: '0.1em', color: 'rgba(255,255,255,0.7)', marginTop: 8 }}>{s.k.toUpperCase()}</div>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+        </section>
+      );
+    }
+
+    function LineQuote({ L }) {
+      const a = accentOf(L);
+      return (
+        <section style={{ padding: '56px 36px 0', maxWidth: 1400, margin: '0 auto' }}>
+          <Reveal>
+            {/* ── QUOTE PHOTO (Spot 5) ──────────────────────────────
+                Add a photo URL to each line object in LINES data:
+                  quotePhoto: '/images/lakewood-school.webp'
+                Recommended: 600×400px WebP, real school or classroom.
+                Layout shifts to photo-left / quote-right when set.
+            ─────────────────────────────────────────────────── */}
+            <div style={{ background: WARM.card, border: `1.5px solid ${WARM.hairline}`, borderRadius: R.lg, overflow: 'hidden', display: 'grid', gridTemplateColumns: L.quotePhoto ? '1fr 1fr' : '4px 1fr', gap: L.quotePhoto ? 0 : 32, ...(L.quotePhoto ? {} : { padding: '48px 52px' }) }}>
+              {L.quotePhoto
+                ? <>
+                    <img src={L.quotePhoto} alt={`${L.name} — school installation`} loading="lazy" decoding="async" style={{ width: '100%', height: '100%', objectFit: 'cover', minHeight: 260, display: 'block' }}/>
+                    <div style={{ padding: '44px 48px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                      <div style={{ width: 32, height: 3, borderRadius: 99, background: a.c, marginBottom: 24 }}/>
+                      <p style={{ margin: '0 0 20px', fontFamily: FONT.display, fontSize: 22, fontWeight: 500, color: WARM.ink, lineHeight: 1.55, fontStyle: 'italic' }}>{L.quote.text}</p>
+                      <div style={{ fontFamily: FONT.mono, fontSize: 11, color: WARM.mute, letterSpacing: '0.08em' }}>{L.quote.who.replace('— ', '').toUpperCase()}</div>
+                    </div>
+                  </>
+                : <>
+                    <div style={{ background: a.c, borderRadius: 99 }}/>
+                    <div>
+                      <p style={{ margin: '0 0 20px', fontFamily: FONT.display, fontSize: 24, fontWeight: 500, color: WARM.ink, lineHeight: 1.5, fontStyle: 'italic' }}>{L.quote.text}</p>
+                      <div style={{ fontFamily: FONT.mono, fontSize: 11, color: WARM.mute, letterSpacing: '0.08em' }}>{L.quote.who.replace('— ', '').toUpperCase()}</div>
+                    </div>
+                  </>
+              }
+            </div>
+          </Reveal>
+        </section>
+      );
+    }
+
+    function LineCatalog({ L }) {
+      const a = accentOf(L);
+      return (
+        <section style={{ padding: '56px 36px 0', maxWidth: 1400, margin: '0 auto' }}>
+          <Reveal><SectionHead eyebrow="CATALOG OVERVIEW" title="What you can order" accent={a.c}/></Reveal>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+            {L.catalog.map(item => (
+              <span key={item} style={{ fontFamily: FONT.body, fontSize: 14, fontWeight: 500, padding: '9px 18px', borderRadius: R.pill, background: WARM.card, border: `1.5px solid ${WARM.hairline}`, color: WARM.ink2 }}>{item}</span>
+            ))}
+          </div>
+        </section>
+      );
+    }
+
+    function LineSwitcher({ current, lines }) {
+      const others = lines.filter(L => L.id !== current.id);
+      return (
+        <section style={{ padding: '56px 36px 40px', maxWidth: 1400, margin: '0 auto' }}>
+          <Reveal><SectionHead eyebrow="OTHER PRODUCT LINES" title="Keep exploring"/></Reveal>
+          <div className="line-switcher" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12 }}>
+            {others.map(L => (
+              <a key={L.id} href={`#/line/${L.id}`} style={{ textDecoration: 'none' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '14px 16px', borderRadius: R.md, border: `1.5px solid ${WARM.hairline}`, background: WARM.card, transition: 'border-color .15s, transform .15s' }}
+                  onMouseEnter={e => { e.currentTarget.style.borderColor = L.accent + '60'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+                  onMouseLeave={e => { e.currentTarget.style.borderColor = WARM.hairline; e.currentTarget.style.transform = 'none'; }}
+                >
+                  <LineChip L={L} size={30}/>
+                  <div>
+                    <div style={{ fontFamily: FONT.body, fontWeight: 600, fontSize: 13, color: WARM.ink }}>{L.name}</div>
+                    <div style={{ fontFamily: FONT.body, fontSize: 11.5, color: WARM.mute }}>{L.catalog.length} categories</div>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      );
+    }
+
+    // "Pairs well with" — cross-links to 1-2 complementary departments
+    function LinePairing({ L, lines }) {
+      const a = accentOf(L);
+      const partners = (L.pairsWith || []).map(id => lines.find(x => x.id === id)).filter(Boolean);
+      if (!partners.length) return null;
+      return (
+        <section style={{ padding: '40px 36px 0', maxWidth: 1400, margin: '0 auto' }}>
+          <div style={{ borderRadius: R.lg, border: `1.5px solid ${a.c}28`, background: a.soft, padding: '24px 26px', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 18 }}>
+            <div style={{ fontFamily: FONT.mono, fontSize: 10.5, letterSpacing: '0.14em', color: a.ink, whiteSpace: 'nowrap' }}>PAIRS WELL WITH</div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, flex: 1 }}>
+              {partners.map(P => (
+                <a key={P.id} href={`#/line/${P.id}`} style={{
+                  display: 'inline-flex', alignItems: 'center', gap: 9, padding: '9px 16px 9px 9px', borderRadius: R.pill,
+                  textDecoration: 'none', background: WARM.paper, border: `1px solid ${WARM.hairline}`, transition: 'transform .15s, border-color .15s' }}
+                  onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-1px)'; e.currentTarget.style.borderColor = P.accent + '60'; }}
+                  onMouseLeave={e => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.borderColor = WARM.hairline; }}>
+                  <LineChip L={P} size={24}/>
+                  <span style={{ fontFamily: FONT.body, fontWeight: 600, fontSize: 13, color: WARM.ink }}>{P.name}</span>
+                  <span style={{ fontFamily: FONT.body, fontSize: 12, color: WARM.mute }}>→</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    // "Next department" — guided tour link to keep visitors moving through the catalog
+    function LineNextNav({ current, lines }) {
+      const i = lines.findIndex(x => x.id === current.id);
+      const next = lines[(i + 1) % lines.length];
+      const a = accentOf(next);
+      return (
+        <section style={{ padding: '16px 36px 0', maxWidth: 1400, margin: '0 auto' }}>
+          <a href={`#/line/${next.id}`} style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16, textDecoration: 'none',
+            padding: '20px 26px', borderRadius: R.lg, border: `1.5px solid ${WARM.hairline}`, background: WARM.card,
+            transition: 'border-color .15s, transform .15s' }}
+            onMouseEnter={e => { e.currentTarget.style.borderColor = a.c + '60'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+            onMouseLeave={e => { e.currentTarget.style.borderColor = WARM.hairline; e.currentTarget.style.transform = 'none'; }}>
+            <div>
+              <div style={{ fontFamily: FONT.mono, fontSize: 10.5, letterSpacing: '0.14em', color: WARM.mute, marginBottom: 6 }}>NEXT DEPARTMENT</div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                <LineChip L={next} size={28}/>
+                <span style={{ fontFamily: FONT.display, fontSize: 19, fontWeight: 700, color: WARM.ink, letterSpacing: '-0.02em' }}>{next.name}</span>
+              </div>
+            </div>
+            <div style={{ fontFamily: FONT.body, fontSize: 22, color: a.c }}>→</div>
+          </a>
+        </section>
+      );
+    }
+
+    function LinePage({ L, lines, onQuoteClick }) {
+      React.useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, [L.id]);
+      return (
+        <div>
+          <LineHero L={L}/>
+          <LineFeatures L={L}/>
+          <LineStats L={L}/>
+          <LineQuote L={L}/>
+          <LineCatalog L={L}/>
+          <LinePairing L={L} lines={lines}/>
+          <LineNextNav current={L} lines={lines}/>
+          <LineSwitcher current={L} lines={lines}/>
+        </div>
+      );
+    }
+
+    function OverviewPage({ lines, onQuoteClick, onMatchClick }) {
+      return (
+        <div>
+          <HeroSection lines={lines} onQuoteClick={onQuoteClick} onMatchClick={onMatchClick}/>
+          <MatcherSection onMatchClick={onMatchClick}/>
+          <TrustStrip onQuoteClick={onQuoteClick}/>
+        </div>
+      );
+    }
+
+    function App() {
+      const route = useRoute();
+      const activeLine = route.name === 'line' ? LINES.find(L => L.id === route.id) : null;
+      const navAccent = activeLine ? activeLine.accent : WARM.primary;
+      const [showQuote, setShowQuote] = React.useState(false);
+      const [showMatcher, setShowMatcher] = React.useState(false);
+
+      React.useEffect(() => {
+        if (route.name !== 'line') return;
+        setShowQuote(false);
+        setShowMatcher(false);
+      }, [route.name, activeLine?.id]);
+
+      return (
+        <div style={{ minHeight: '100vh', background: WARM.paper }}>
+          <TopNav accent={navAccent} route={route} lines={LINES} onQuoteClick={() => setShowQuote(true)}/>
+          <main id="main-content" role="main">
+            {activeLine
+              ? <LinePage L={activeLine} lines={LINES} onQuoteClick={() => setShowQuote(true)}/>
+              : <OverviewPage lines={LINES} onQuoteClick={() => setShowQuote(true)} onMatchClick={() => setShowMatcher(true)}/>
+            }
+          </main>
+          <Footer lines={LINES}/>
+          {showQuote   && <QuoteModal    onClose={() => setShowQuote(false)}/>}
+          {showMatcher && <EquipmentMatcher onClose={() => setShowMatcher(false)}/>}
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+  </script>
+</body>
+</html>     

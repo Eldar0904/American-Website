@@ -1,0 +1,33 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "*.zip",
+      "drive-download-*/**",
+      "ui-ux-pro-max-skills/**",
+      "magic-mcp/**",
+      "American Website/**",
+      "IntellectumUS-integrated.html",
+      "IntellectumUS-improved-v2.html",
+      "*.docx",
+      "*.md"
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|png|webp|avif|gif|svg)",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        ]
+      },
+      {
+        "source": "**/*.html",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+        ]
+      }
+    ]
+  }
+}
